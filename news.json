@@ -1,0 +1,60 @@
+// This file is where the news section of the app will be stored.
+
+
+[
+  {
+    "title": "Mrs. Tinubu Begins Food Aid in Abia, Gov. Otti Hails Effort",
+    "image": "img/news/rhi.jpeg",
+    "text": "Senator Oluremi Tinubu, wife of the President, has begun distributing food items to vulnerable groups in Abia State through the Renewed Hope Initiative programme."
+  },
+  {
+    "title": "Supreme Court Rejects Governors’ Loot Funds Suit",
+    "image": "img/news/scn2.jpeg",
+    "text": "The Supreme Court has dismissed a suit by the 36 state governments and the Nigeria Governors’ Forum challenging the Federal Government’s use of recovered looted funds."
+  },
+  {
+    "title": "ABIA STATE GOVERNOR SIGNS 18 BILLS INTO LAW",
+    "image": "img/news/abia.jpeg",
+    "text": "Abia State Governor, Dr. Alex Otti, held an expanded Executive Council meeting with House of Assembly leaders, during which he signed 18 Executive Bills into law."
+  },
+  {
+    "title": "Abia Police Rescue 12 Children and Arrest Couple",
+    "image": "img/news/naptip3.png",
+    "text": "The Abia State Police Command has rescued 12 trafficked children, while the suspects, Blessing Emebo a 49-year-old female and Sunday Emebo, 42 years male were arrested."
+  },
+  {
+    "title": "France and Poland Sign Strategic Pact",
+    "image": "img/news/franceandpoland.jpg",
+    "text": "France and Poland on Friday will sign a new strategic cooperation treaty, with Polish leader Donald Tusk insisting that a mutual security pledge will be at the heart of the agreement."
+  },
+  {
+    "title": "BRICS Nations Rally Against U.S. Pressure",
+    "image": "img/news/brics.jpg",
+    "text": "Senior diplomats from the BRICS grouping of nations gathered Monday in Brazil to present a united front in the face of US President Donald Trump’s aggressive trade policies."
+  },
+  {
+    "title": "Rivers Leaders Demand Quick Democracy Return",
+    "image": "img/news/tinubu.jpeg",
+    "text": "President Tinubu, the National Assembly, and Governor Fubara have been urged to expedite the full restoration of democratic governance in Rivers State."
+  },
+  {
+    "title": "Lawmakers Defect in Kebbi Political Shift",
+    "image": "img/news/pdpandapc.jpg",
+    "text": "The PDP in Kebbi State faces a major setback as three prominent lawmakers, seen as key powerbrokers, have officially defected to the All Progressives Congress (APC)."
+  },
+  {
+    "title": "Pope Leo XIV Urges Stronger Catholic Faith",
+    "image": "img/news/pope.jpg",
+    "text": "Pope Leo XIV urged the Catholic Church to urgently counter declining faith during his first homily, a day after becoming the first American pope in history."
+  },
+  {
+    "title": "JAMB Releases UTME Results, Some Withheld",
+    "image": "img/news/Jamb.jpg",
+    "text": "The Joint Admissions and Matriculation Board (JAMB) has announced the release of the 2025 Unified Tertiary Matriculation Examination results, withholds 39,834."
+  },
+  {
+    "title": "Dangote Refutes Rivalry, Supports NNPC Unity",
+    "image": "img/news/dangoteandnnpc.webp",
+    "text": "Aliko Dangote, CEO of Dangote Group, stated Thursday there’s no rivalry with NNPCL, reaffirming both organizations’ shared commitment to collaboration within Nigeria’s energy sector."
+  }
+]

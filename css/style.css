@@ -1,0 +1,838 @@
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+/*** Spinner End ***/
+
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.border-secondary {
+    transition: 0.5s;
+}
+
+.btn.border-secondary:hover {
+    background-color: #b74e26;
+    color: var(--bs-white) !important;
+}
+
+/*** Topbar Start ***/
+.fixed-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+    border: 0;
+}
+
+.topbar {
+    padding: 20px;
+    border-radius: 230px 100px;
+}
+
+.topbar .top-info {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link a {
+    letter-spacing: 1px;
+}
+
+.topbar .top-link a small:hover {
+    color: var(--bs-secondary) !important;
+    transition: 0.5s;
+}
+
+.topbar .top-link a small:hover i {
+    color: var(--bs-primary) !important;
+}
+
+.container.topbar {
+    background-color: #b74e26 !important; /* Use !important to ensure it overrides other styles */
+}
+
+.btn.border-secondary.bg-white.me-4.rounded-pill.d-flex.align-items-center.px-3 {
+    background-color: #b74e26 !important; /* Set the background color */
+    border-color: #b74e26 !important; /* Match the border color to the background */
+    color: #fff !important; /* Set the text color to white for contrast */
+}
+
+.btn.border-secondary.bg-white.me-4.rounded-pill.d-flex.align-items-center.px-3 .fas.fa-play {
+    color: #fff !important; /* Set the play button color to white */
+}
+
+.btn.border-secondary.bg-white.me-4.rounded-pill.d-flex.align-items-center.px-3:hover {
+    background-color: #96571a !important; /* Darken the background on hover (optional) */
+    border-color: #96571a !important;
+}
+
+.btn.border-secondary.bg-white.me-4.rounded-pill.d-flex.align-items-center.px-3:hover .fas.fa-play {
+    color: #fff !important; /* Keep the play button white on hover */
+}
+
+.btn.border-secondary.bg-white.me-4.rounded-pill.d-flex.align-items-center.px-3:hover span {
+    color: #fff !important; /* Keep the text white on hover */
+}
+/*** Topbar End ***/
+
+/*** Navbar Start ***/
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+    color: #b74e26; /* Changed text color */
+    font-weight: 700;
+}
+
+.navbar {
+    height: 50%;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+    /* color: var(--bs-primary)
+     */
+     color: #b74e26; 
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-brand img {
+    max-width: 150px; /* Adjust this value as needed */
+    height: auto;
+    display: inline-block; /* Ensures it behaves like inline text */
+    vertical-align: middle; /* Aligns it vertically with other inline elements */
+}
+
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+/*** Navbar End ***/
+
+/*** Hero Header ***/
+.hero-header {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/hero-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background: linear-gradient(rgba(255, 181, 36, 0.7), rgba(255, 181, 36, 0.7));
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid var(--bs-white);
+    background: var(--bs-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    margin-right: 20px;
+}
+
+.carousel-control-prev {
+    margin-left: 20px;
+}
+
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/var/cover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .hero-header,
+    .page-header {
+        margin-top: 152px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-header,
+    .page-header {
+        margin-top: 97px !important;
+    }
+}
+/*** Hero Header end ***/
+
+
+/*** featurs Start ***/
+.featurs .featurs-item .featurs-icon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.featurs .featurs-item .featurs-icon::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: var(--bs-secondary);
+    position: absolute;
+    bottom: -10px;
+    transform: translate(-50%);
+    transform: rotate(45deg);
+    background: var(--bs-secondary);
+    
+}
+/*** featurs End ***/
+
+
+/*** service Start ***/
+.service .service-item .service-content {
+    position: relative;
+    width: 250px; 
+    height: 130px; 
+    top: -50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/*** service End ***/
+
+
+/*** Fruits Start ***/
+.fruite .tab-class .nav-item a.active {
+    background: var(--bs-secondary) !important;
+}
+
+.fruite .tab-class .nav-item a.active span {
+    color: var(--bs-white) !important; 
+}
+
+.fruite .fruite-categorie .fruite-name {
+    line-height: 40px;
+}
+
+.fruite .fruite-categorie .fruite-name a {
+    transition: 0.5s;
+}
+
+.fruite .fruite-categorie .fruite-name a:hover {
+    color: var(--bs-secondary);
+}
+
+.fruite .fruite-item {
+    height: 100%;
+    transition: 0.5s;
+}
+.fruite .fruite-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.fruite .fruite-item .fruite-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.fruite .fruite-item .fruite-img img {
+    transition: 0.5s;
+}
+
+.fruite .fruite-item .fruite-img img:hover {
+    transform: scale(1.3);
+}
+
+.news-headline {
+    background-color: #1671B0;
+    color:;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+/*** Fruits End ***/
+
+
+/*** vesitable Start ***/
+.vesitable .vesitable-item {
+    height: 100%;
+    transition: 0.5s;
+}
+
+.vesitable .vesitable-item:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+
+.vesitable .vesitable-item .vesitable-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.vesitable .vesitable-item .vesitable-img img {
+    transition: 0.5s;
+}
+
+.vesitable .vesitable-item .vesitable-img img:hover {
+    transform: scale(1.2);
+}
+
+.vesitable .owl-stage {
+    margin: 50px 0;
+    position: relative;
+}
+
+.vesitable .owl-nav .owl-prev {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.vesitable .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.vesitable .owl-nav .owl-next {
+    position: absolute;
+    top: -8px;
+    right: 88px;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.vesitable .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+/*** vesitable End ***/
+
+
+/*** Banner Section Start ***/
+.banner .banner-btn:hover {
+    background: var(--bs-primary);
+}
+
+/* Add spacing between text and image */
+@media (min-width: 992px) {
+    .banner .col-lg-7 {
+        padding-right: 40px; /* Add space between text and image */
+    }
+
+    .banner .col-lg-5 {
+        margin-left: auto; /* Push image more to the right */
+    }
+}
+
+/* Reduce font size of the class fw-normal inside banner */
+.banner .fw-normal {
+    font-size: 2rem; /* adjust as needed, original display-3 is too large */
+    color: black;
+    background-color: black; /* Black background */
+    color: white; /* White text for good contrast */
+    padding: 5px 15px; /* Add space before and after the text */
+    display: inline-block; /* Ensures padding and background wrap around the content */
+    border-radius: 5px; /* Optional: makes the background corners rounded */
+}
+
+/* Increase font size of the class mb-4 inside banner */
+.banner .mb-4 {
+    font-size: 1.3rem; /* or larger like 1.3rem depending on your design */
+    margin-top: 3rem; /* adjust as needed */
+}
+
+.quote-container {
+  
+    color: #333; /* Dark text color for contrast */
+    padding: 20px; /* Space inside the container around the text */
+    border: 2px solid #edad68; /* Border with a color similar to your theme */
+    border-radius: 10px; /* Optional: makes the corners rounded for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    font-style: italic; /* Gives a quote-like appearance */
+    position: relative; /* Allows for positioning of pseudo-element for quote icon */
+}
+
+/* Optional: Adding quote icon */
+.quote-container::before {
+    content: '“'; /* Adds opening quote mark */
+    font-size: 3rem; /* Size of the quote mark */
+    color: black; /* Matches your theme color */
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+/* Optional: Closing quote mark */
+.quote-container::after {
+    content: '”'; /* Adds closing quote mark */
+    font-size: 3rem;
+    color: black;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+
+/*** Banner Section End ***/
+
+
+/*** Facts Start ***/
+.counter {
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.counter i {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.counter h4 {
+    color: var(--bs-primary);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.counter h1 {
+    margin-bottom: 0;
+}
+/*** Facts End ***/
+
+
+/*** testimonial Start ***/
+.testimonial .owl-nav .owl-prev {
+    position: absolute;
+    top: -58px;
+    right: 0;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-prev:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.testimonial .owl-nav .owl-next {
+    position: absolute;
+    top: -58px;
+    right: 88px;
+    color: var(--bs-primary);
+    padding: 5px 25px;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.testimonial .owl-nav .owl-next:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+
+/*** testimonial End ***/
+
+
+/*** Single Page Start ***/
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: var(--bs-dark);
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid var(--bs-secondary);
+    margin: 0 4px;
+}
+  
+.pagination a.active {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    border: 1px solid var(--bs-secondary);
+}
+  
+.pagination a:hover:not(.active) {background-color: var(--bs-primary)}
+
+.nav.nav-tabs .nav-link.active {
+    border-bottom: 2px solid var(--bs-secondary) !important;
+}
+
+
+/*** Single Page End ***/
+
+
+/*** Footer Start ***/
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+/*** Footer End ***/
+
+
+.headers {  
+    background-color: black; /* Black background */
+    color: white; /* White text for good contrast */
+    padding: 5px 15px; /* Add space before and after the text */
+    display: inline-block; /* Ensures padding and background wrap around the content */
+    border-radius: 5px; /* Optional: makes the background corners rounded */
+}
+
+.sub-headers {
+    background-color: #b74e26;
+    color: #000;
+    padding: 15px 25px;           /* Moderate top/bottom spacing */
+    border-radius: 8px;           /* Slightly more rounded for a modern look */
+    display: flex;
+    align-items: center;          /* Vertically center items */
+    justify-content: space-between;
+    flex-wrap: wrap;              /* Ensures responsiveness on smaller screens */
+}
+
+.sub-headers > .col-lg-4,
+.sub-headers > .col-lg-8 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sub-headers h1 {
+    margin-bottom: 0;
+    font-size: 1.75rem;           /* Optional: adjusts h1 size to be more balanced */
+    font-weight: 600;
+}
+
+.news-header {
+    margin-bottom: 4rem;
+}
+
+.news-carousel-wrapper {
+    overflow: hidden; /* Hide the overflowing carousel items */
+    position: relative; /* For positioning the controls */
+    padding: 0 60px; /* Increased padding to accommodate buttons */
+}
+
+.news-carousel {
+    display: flex; /* Arrange items horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth scrolling animation */
+}
+
+.news-item {
+    flex: 0 0 auto; /* Don't grow/shrink, auto width based on content */
+    width: 350px; /* Adjust as needed for the item width */
+    margin-right: 1.5rem; /* Space between items */
+}
+
+/* Style the "Read More" button */
+.news-item .btn-outline-secondary {
+    background-color: white;
+    color: black;
+    border: 3px solid #1671B0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item .btn-outline-secondary {
+    background-color: white;
+    color: black;
+    border: 3px solid #1671B0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.schedule1 {   
+    color: #b74e26;
+    font-weight: 900;
+}
+
+.schedule2 {
+    font-weight: 900;   
+  }
+  
+
+.schedule3 {    
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+* Hover effect */
+.news-item .btn-outline-secondary:hover {
+    background-color: #b74e26;
+    color: black;
+    border-color: #b74e26;
+}
+
+.news-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.news-content {
+    border-color: #1671b0;
+    /* Adjust padding and border as needed */
+}
+
+.badge {
+    /* Adjust badge styling if needed */
+}
+
+
+.news-carousel-wrapper {
+    position: relative;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 5px; /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+    
+}
+
+.carousel-controls button {
+    z-index: 10; /* Ensure buttons are above the carousel */
+    position: absolute; /* Fix the button position */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #b74e26; /* Set the button background color */
+    color: white; /* Set the button text/icon color */
+    border: none; /* Remove default button border */
+    border-radius: 50%; /* Keep them circular */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.8; /* Add a slight transparency */
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.carousel-controls button:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.carousel-controls .prev-button {
+    left: 10px; /* Adjust distance from the left edge */
+}
+
+.carousel-controls .next-button {
+    right: 10px; /* Adjust distance from the right edge */
+}
+
+
+
+/* Animation for watchword */
+
+/* Fade and Zoom In on Load */
+@keyframes fadeZoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .fade-zoom {
+    animation: fadeZoomIn 1.2s ease-out forwards;
+  }
+  
+  
+  /* Shine / Light Sweep Animation */
+  .shine-text {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #000; /* ensure good contrast */
+  }
+  
+  .shine-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shine 2.5s infinite;
+  }
+  
+ 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+
+
+  .attention-text {
+    background-color: #b74e26;
+    color: #fff;  
+    display: inline-block;
+    font-size: 24px;    
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #1671B0;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.attention-text:hover {
+    background-color: #fff;
+    color: #1671B0;
+    border-color: #b74e26;
+}
+
+
+
