@@ -19,6 +19,9 @@
         <meta name="author" content="Fitin Solutions by Otis Mario">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +42,11 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- swiper js -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+         
     </head>
 
     <body>
@@ -48,6 +56,14 @@
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
         <!-- Spinner End -->
+
+        <!-- Image Popup -->
+        <div id="popup-overlay"></div>
+        <div id="image-popup">
+            <span class="popup-close" onclick="closePopup()">CLOSE</span>
+            <img src="img/var/media/mti4.jpeg" alt="Promotional Image">
+        </div>
+
 
 
         <!-- Navbar start -->
@@ -73,8 +89,8 @@
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About Us</a>
-                            <a href="mediatraining.html" class="nav-item nav-link">Media Summit</a>                          
-
+                            <a href="mediatraining.html" class="nav-item nav-link">Media Institute</a> 
+                            <a href="icon2025.html" class="nav-item nav-link">Icons</a>
                             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                         </div>
 
@@ -92,8 +108,48 @@
         </div>
         <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <div class="container-fluid py-5 mb-5 hero-header">
+       
+        <!-- Swiper -->
+        <div class="container-fluid p-0">
+                <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="img/var/media/mti3.jpeg" alt="media Institute 2025" />
+                </div>                
+                <div class="swiper-slide">
+                <img src="img/oap/oap2.jpeg" alt="OAP 1" />
+                </div>
+                <div class="swiper-slide">
+                <img src="img/oap/oap1.jpeg" alt="OAP 2" />
+                </div>
+                <div class="swiper-slide">
+                <img src="img/oap/oap6.jpeg" alt="OAP 6" />
+                </div>
+                <div class="swiper-slide">
+                <img src="img/var/media/mti3.jpeg" alt="media Institute 2025" />
+                </div>
+                <div class="swiper-slide">
+                <img src="img/oap/oap4.jpeg" alt="OAP 4" />
+                </div>
+                <div class="swiper-slide">
+                <img src="img/oap/oap3.jpeg" alt="OAP 3" />
+                </div>
+                <div class="swiper-slide">
+                <img src="img/oap/oap5.jpeg" alt="OAP 5" />
+                </div>
+            </div>
+        </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-5">
+            <a href="2025registration.html" class="attention-text">🎯 Register Now for 2025 Media Training Institute!</a>
+            </div>
+         </div>
+            
+
+
+        <!-- Hero Starts -->
+        <!-- <div class="container-fluid py-5 mb-5 hero-header">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-12 col-lg-5">      
@@ -105,37 +161,14 @@
                         
                        
                     </div>
-                    <div class="col-md-12 col-lg-7">
-                        <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
-                            <div class="carousel-inner" role="listbox">                               
-                                <div class="carousel-item active rounded">
-                                    <img src="img/oap/oap1.jpeg" class="img-fluid w-100 h-1000 rounded" alt="First slide">                                    
-                                </div>
-                                <div class="carousel-item rounded">
-                                    <img src="img/oap/oap2.jpeg" class="img-fluid w-100 h-1000 rounded" alt="Second slide">                                    
-                                </div>
-                                <div class="carousel-item rounded">
-                                    <img src="img/oap/oap3.jpeg" class="img-fluid w-100 h-1000 rounded" alt="Second slide">                                    
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
+                    
                 </div>
-                <div class="text-center mt-5">
-                    <a href="2025registration.html" class="attention-text">🎯 Register Now for 2025 Media Training Summit!</a>
-                </div>
-                
+                                
             </div>
-        </div>
-        <!-- Hero End -->
+        </div> -->
+        <!-- Hero Ends -->      
+
+        
 
         
                
@@ -347,7 +380,7 @@
                         <div class="py-4">
                             <h3 class="display-5 text-dark fade-zoom shine-text">Watch Word</h3>
                             <p class="mb-4 quote-container text-dark">
-                                Do not relent in doing right, even when it's easier to do wrong. True character is judged when you choose to do right against all odds and inconveniences.
+                                Don't stop giving your best, even when unappreciated; rewards for good works come from God.
                             </p>
                             <p class="fw-normal text-dark mb-2"><span><b>-</b></span> Bishop Sunday Onuoha</p> 
                         </div>
@@ -494,7 +527,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="img/schedule/bigissues.jpeg" class="img-fluid w-100 rounded-top" alt="var104.1fm">
+                                                    <img src="img/schedule/bigissues2.jpeg" class="img-fluid w-100 rounded-top" alt="var104.1fm">
                                                 </div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                     <h3 class="schedule1">The Big Issues</h3>                                                    
@@ -1564,8 +1597,9 @@
                 <div class="d-flex flex-column text-start footer-item">
                     <h4 class="text-light mb-3">Quick Links</h4>
                     <a class="btn-link" href="index.html">Home</a>
-                    <a class="btn-link" href="about.html">About Us</a>
-                    <a class="btn-link" href="mediatraining.html">Media Summit</a>
+                    <a class="btn-link" href="about.html">About Us</a>                    
+                    <a class="btn-link" href="mediatraining.html">Media Institute</a>
+                    <a class="btn-link" href="icon2025.html">Icons</a>
                     <a class="btn-link" href="contact.html">Contact Us</a>                    
                 </div>
             </div>
@@ -1611,6 +1645,9 @@
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>

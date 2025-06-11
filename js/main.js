@@ -149,6 +149,18 @@
 
 })(jQuery);
 
+// swiper slider
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2500, // 25 seconds
+      disableOnInteraction: false,
+    },
+    effect: "slide",
+    speed: 600,
+  });
+
+
 
 
 
@@ -225,3 +237,23 @@ document.addEventListener('DOMContentLoaded', function() {
     newsCarouselWrapper.addEventListener('mouseleave', startAutoScroll);
 });
 
+
+// This controls the image pop up on the website
+
+  function showPopup() {
+    document.getElementById('image-popup').style.display = 'block';
+    document.getElementById('popup-overlay').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('image-popup').style.display = 'none';
+    document.getElementById('popup-overlay').style.display = 'none';
+  }
+
+  // Show popup after 2 seconds
+  window.addEventListener('load', function () {
+    setTimeout(showPopup, 200);
+  });
+
+  // Close popup when clicking the overlay
+  document.getElementById('popup-overlay').addEventListener('click', closePopup);

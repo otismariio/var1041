@@ -3,10 +3,22 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Fruitables - Vegetable Website Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <title>Vision Africa Radio, 104.1FM | Sharing God's Love</title>
+        
+        <meta property="og:title" content="Vision Africa Radio | Love 104.1FM Umuahia">
+        <meta property="og:description" content="Sharing God's Love">
+        <meta property="og:image" content="images/cover.png">
+        <meta property="og:url" content="https://visionafricafmradio.com/">
+        <meta property="og:type" content="website"> <meta property="og:site_name" content="VAR104.1FM">
+        <meta property="og:locale" content="en_US">
+   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="We are a radio station located in the heart of Umuahia in Abia, God's Own State Nigeria. We cover entertainment news, religious, political, sports and educational news. Tune in to us on 104.1FM or listen online at iradio.visionafricafmradio.com ">
+        <meta name="keywords" content="vision,africa,vision africa,104.1 fm,var fm,var104.1fm,visiona frica radio,sunday onuoha, radio umuahia">
+        <meta name="author" content="Fitin Solutions by Otis Mario">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +39,12 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- swiper js -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+         
     </head>
 
     <body>
@@ -43,48 +61,37 @@
             <div class="container topbar bg-primary d-none d-lg-block">
                 <div class="d-flex justify-content-between">
                     <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+                        <h6 class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white"><b>1</b> Ogurube Layout Umuahia, Abia State</a></h6>
+                        
                     </div>
                     <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                        <h6 class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">info@visionafricafmradio.com</a></h6>                       
                     </div>
                 </div>
             </div>
             <div class="container px-0">
-                <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">                  
+                    <a href="index.html" class="navbar-brand"><img src="img/var/cover.png" alt=""></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="shop.html" class="nav-item nav-link">Shop</a>
-                            <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="cart.html" class="dropdown-item">Cart</a>
-                                    <a href="chackout.html" class="dropdown-item">Chackout</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item active">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About Us</a>
+                            <a href="mediatraining.html" class="nav-item nav-link">Media Institute</a>                          
+
+                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                         </div>
-                        <div class="d-flex m-3 me-0">
-                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                            </a>
-                            <a href="#" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a>
-                        </div>
+
+                        <!-- <div class="d-flex m-3 me-0">
+                            
+                            <button class="btn border border-secondary bg-white me-4 rounded-pill d-flex align-items-center px-3">
+                                <i class="fas fa-play text-primary me-2" style="color: #b74e26;"></i>
+                                <span>Start Listening</span>
+                            </button>
+                            
+                        </div> -->
                     </div>
                 </nav>
             </div>
