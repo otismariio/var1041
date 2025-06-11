@@ -238,22 +238,49 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// This controls the image pop up on the website
+// This controls the image pop up on the homepage website
+ document.addEventListener('DOMContentLoaded', function () {
+    function showPopup() {
+      document.getElementById('image-popup').style.display = 'block';
+      document.getElementById('popup-overlay').style.display = 'block';
+    }
 
-  function showPopup() {
-    document.getElementById('image-popup').style.display = 'block';
-    document.getElementById('popup-overlay').style.display = 'block';
-  }
+    function closePopup() {
+      document.getElementById('image-popup').style.display = 'none';
+      document.getElementById('popup-overlay').style.display = 'none';
+    }
 
-  function closePopup() {
-    document.getElementById('image-popup').style.display = 'none';
-    document.getElementById('popup-overlay').style.display = 'none';
-  }
-
-  // Show popup after 2 seconds
-  window.addEventListener('load', function () {
+    // Show popup after 200 milliseconds
     setTimeout(showPopup, 200);
+
+    // Close popup when clicking the overlay
+    document.getElementById('popup-overlay').addEventListener('click', closePopup);
+
+    // Close popup when clicking the close button
+    document.querySelector('.popup-close').addEventListener('click', closePopup);
   });
 
-  // Close popup when clicking the overlay
-  document.getElementById('popup-overlay').addEventListener('click', closePopup);
+
+
+//   Image pop out as seen in media training
+function openPopup(imageSrc) {
+    document.getElementById("popupImage").src = imageSrc;
+    document.getElementById("imagePopup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+}
+
+function toggleZoom(event) {
+    event.stopPropagation(); // Prevent closing popup
+    const img = event.target;
+    img.classList.toggle("zoomed");
+}
+
+function openPopup(imageSrc) {
+    const popupImage = document.getElementById("popupImage");
+    popupImage.src = imageSrc;
+    popupImage.classList.remove("zoomed"); // Reset zoom
+    document.getElementById("imagePopup").style.display = "block";
+}

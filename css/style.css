@@ -864,6 +864,7 @@
     border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
+    transition: opacity 0.3s ease;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
   }
 
@@ -873,20 +874,22 @@
     display: block;
   }
 
-  .popup-close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1100;
-  }
+  .popup-close {    
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #000; /* black */
+  font-size: 18px; /* smaller size */
+  font-weight: normal; /* optional: make it lighter */
+  cursor: pointer;
+  z-index: 1100;
+  text-transform: uppercase; /* optional: keep it uppercase */
+}
 
   #popup-overlay {
     display: none;
     position: fixed;
+    cursor: pointer;
     z-index: 1040;
     top: 0;
     left: 0;
@@ -894,3 +897,57 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
   }
+
+
+  /* image pop out effect in media training */
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 95%;
+}
+
+.popup-close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 95%;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.popup-content.zoomed {
+    transform: scale(1.25);
+    cursor: zoom-out;
+}
+
+
+
+
+
+
+
