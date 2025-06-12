@@ -871,8 +871,12 @@
   #image-popup img {
     width: 100%;
     height: auto;
-    display: block;
+    display: block;    
   }
+
+   .image-mti img:hover {
+      transform: scale(1.5);
+    }
 
   .popup-close {    
   position: absolute;
@@ -898,8 +902,14 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  
+
 
   /* image pop out effect in media training */
+
+
+
+
   .popup-overlay {
     display: none;
     position: fixed;
@@ -947,7 +957,135 @@
 
 
 
+/* Code to control the beghaviour of the titles and description view */
+
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+          
+    }
+
+    .image-grid img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      cursor: pointer;
+      border: 4px solid #B74E26; 
+      border-radius: 5%;     
+      transition: transform 0.4s;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.50);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.95);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;      
+    }
+
+    
+
+
+.title-btn {
+    background-color: #B74E26;
+    color: white;
+    border: 2px solid #1671B0;
+    border-radius: 10%;
+}
 
 
 
+/* This controls the Faculty Members profile */
+  .flex-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-top: 2px solid #F29E33;
+    border-right: 2px solid #F29E33;
+    border-radius: 5%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .image-col {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-width: 200px;
+  }
+
+  .image-col img {
+  width: 100%;
+  max-height: 300px; /* This sets uniform height for all images */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-col {
+  flex: 1;
+  max-width: 250px;
+}
+
+.highlight {
+    color: #b74e26;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+  .text-col {
+    flex: 2;
+    min-width: 250px;
+  }
+
+  .text-col p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .text-col p {
+  margin-bottom: 12px; /* or 16px */
+  line-height: 1.4;
+}
+
+
+  /* Optional: Make text stack under image on small screens */
+  @media (max-width: 600px) {
+    .flex-row {
+      flex-direction: column;
+    }
+  }
 
