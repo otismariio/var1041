@@ -284,3 +284,23 @@ function openPopup(imageSrc) {
     popupImage.classList.remove("zoomed"); // Reset zoom
     document.getElementById("imagePopup").style.display = "block";
 }
+
+
+
+
+  /* This Pop Up is for CTA Events */
+  window.addEventListener('load', function () {
+      setTimeout(function () {
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }, 2000); // 2-second delay
+    });
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+
+    // Close when clicking outside the popup
+    document.getElementById('overlay').addEventListener('click', closePopup);
