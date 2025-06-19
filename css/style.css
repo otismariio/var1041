@@ -210,9 +210,6 @@
     opacity: 1;
 }
 
-#searchModal .modal-content {
-    background: rgba(255, 255, 255, .8);
-}
 /*** Navbar End ***/
 
 /*** Hero Header ***/
@@ -695,7 +692,7 @@
     font-size: 1.2rem;
 }
 
-* Hover effect */
+/* Hover effect */
 .news-item .btn-outline-secondary:hover {
     background-color: #b74e26;
     color: black;
@@ -1127,3 +1124,136 @@
       background: rgba(0,0,0,0.5);
       z-index: 9998;
     }
+
+
+    /* This line of code controls the Playnbuttons in the media institute live streaming platform */
+    .sm-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* YOUTUBE */
+.youtube-play-button {
+  flex: 1 1 30%;
+  min-width: 200px;
+  max-width: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.youtube-play-button:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
+.youtube-play-button svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+
+/* ZOOM */
+.zoom-play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2D8CFF;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.zoom-play-button:hover {
+  background-color: #1b6cd4;
+  color: white;
+}
+
+.zoom-play-button svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+
+/* FACEBOOK */
+.facebook-play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1877f2;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.facebook-play-button:hover {
+  background-color: #145dbf;
+  color: white;
+}
+
+.facebook-play-button svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+
+/* Optional: Center on small screens */
+@media (max-width: 768px) {
+  .youtube-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.centered-video {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.video-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333; /* Adjust as needed */
+}
+
+.flipped-icon {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+}
+
